@@ -34,6 +34,13 @@
   margin: 30px auto;
   padding: 2px;
   background-color: white;
+  /* 
+  .forecast,
+  .today {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  } */
 }
 
 .weathercards .forecast,

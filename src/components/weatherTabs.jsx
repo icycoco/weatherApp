@@ -40,7 +40,7 @@ export const WeatherTabs = () => {
   }, [location]);
 
   return (
-    <div id="wrapper" style={{ height: window.height, width: window.width }}>
+    <div id="wrapper">
       <div className="weatherTabs">
         <span
           className={
