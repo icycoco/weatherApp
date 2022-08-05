@@ -31,11 +31,37 @@
   padding: 2px;
   background-color: white;
 }
-.weathercards .forecast,
-.weathercards .today {
+.weathercards .today,
+.weathercards .forecast {
   display: flex;
   justify-content: space-between;
   margin: 5px;
+}
+.weathercards .today .weathercard,
+.weathercards .forecast .weathercard {
+  display: flex;
+  font-size: large;
+  font-size: 12pt;
+}
+.weathercards .today .weathercard .weatherIcon,
+.weathercards .forecast .weathercard .weatherIcon {
+  font-size: 50px;
+  font-weight: 100;
+  color: skyblue;
+  display: inline-block;
+}
+.weathercards .today .weathercard .todaysweather-rightside,
+.weathercards .forecast .weathercard .todaysweather-rightside {
+  display: inline-block;
+}
+.weathercards .today .weathercard .todaysweather-rightside .temperature,
+.weathercards .forecast .weathercard .todaysweather-rightside .temperature {
+  font-size: 20pt;
+}
+.weathercards .today .weathercard .temperature,
+.weathercards .forecast .weathercard .temperature {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
 }
 .weathercards .today {
   justify-content: space-evenly;
@@ -53,18 +79,4 @@
   display: flex;
   padding: 10px 30px;
   background-color: aliceblue;
-}
-.weathercards .weathercard {
-  display: flex;
-  font-size: large;
-  font-size: 12pt;
-}
-.weathercards .weathercard .weatherIcon {
-  font-size: 50px;
-  font-weight: 100;
-  color: skyblue;
-}
-.weathercards .weathercard .temperature {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 500;
 }

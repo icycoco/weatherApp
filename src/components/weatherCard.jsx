@@ -34,7 +34,7 @@ export const weatherCard = (dailyWeather, day) => {
         <div>
           <div className="dayoftheweek">Today</div>
           <span className="weatherIcon">{getWeatherIconclassName()}</span>
-          <span>
+          <span className="todaysweather-rightside">
             <span className="temperature">{avgTemperature()}°</span>
             <span className="weatherdesc">{getWeatherDescription()}</span>
           </span>
