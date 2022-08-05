@@ -1,5 +1,5 @@
 import React from "react";
-import { getWeatherIcons, WEATHER_DESC } from "../weatherIcons";
+import { getWeatherIcons, WEATHER_DESC } from "../weather";
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
