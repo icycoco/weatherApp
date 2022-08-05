@@ -5,7 +5,6 @@
   width: 100vw;
   position: fixed;
 }
-
 #wrapper {
   position: absolute;
   min-width: 465px;
@@ -17,71 +16,55 @@
   color: gray;
   font-weight: 200;
 }
-
 .weatherTab {
   padding: 30px;
   font-size: 15pt;
 }
-
 .selected.weatherTab {
   color: lightskyblue;
   font-weight: 700;
 }
-
 .weathercards {
   box-shadow: 0px 0px 10px grey;
   width: 465px;
   margin: 30px auto;
   padding: 2px;
   background-color: white;
-  /* 
-  .forecast,
-  .today {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-  } */
 }
-
 .weathercards .forecast,
 .weathercards .today {
   display: flex;
   justify-content: space-between;
   margin: 5px;
 }
-
 .weathercards .today {
   justify-content: space-evenly;
   padding: 30px 10px;
   background-color: aliceblue;
 }
-
+.weathercards .today .weathercard {
+  font-size: 14pt;
+}
+.weathercards .today .weathercard .temperature,
+.weathercards .today .weathercard .weatherdesc {
+  display: block;
+}
 .weathercards .forecast .weathercard {
   display: flex;
   padding: 10px 30px;
   background-color: aliceblue;
 }
-
-.today .weathercard {
-  font-size: 14pt;
-}
-
-.weathercard {
+.weathercards .weathercard {
   display: flex;
   font-size: large;
   font-size: 12pt;
 }
-
-.weathercard .weatherIcon {
+.weathercards .weathercard .weatherIcon {
   font-size: 50px;
   font-weight: 100;
   color: skyblue;
 }
-.today .temperature,
-.today .weatherdesc {
-  display: block;
-}
-.weathercard .temperature {
+.weathercards .weathercard .temperature {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 500;
 }
