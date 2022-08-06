@@ -1,3 +1,4 @@
+import React from "react";
 import {
   WiCloudy,
   WiDayCloudy,
@@ -23,7 +24,7 @@ import {
   WiThunderstorm,
 } from "weather-icons-react";
 
-export const getWeatherIcons = (weathercode) => {
+export const getWeatherIcons = (weathercode: number) => {
   switch (weathercode) {
     case 0:
       return <WiDaySunny></WiDaySunny>;
@@ -76,7 +77,7 @@ export const getWeatherIcons = (weathercode) => {
   }
 };
 
-export const WEATHER_DESC = {
+export const WEATHER_DESC: any = {
   0: "Clear Sky",
   1: "Mainly Clear",
   2: "Partly Cloudy",

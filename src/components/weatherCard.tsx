@@ -1,9 +1,10 @@
 import React from "react";
 import { getWeatherIcons, WEATHER_DESC } from "../weather";
+import { IDailyWeatherData } from "../models/models";
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-export const weatherCard = (dailyWeather, day) => {
+export const weatherCard = (dailyWeather: IDailyWeatherData, day: number) => {
   const dayOfWeek = () => {
     const time = dailyWeather.time[day];
     const d = new Date(time + "T12:00");

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { weatherCard } from "./weatherCard";
+import { IWeatherData } from "../models/models";
 
 const WEATHER_API = "https://api.open-meteo.com/v1/forecast";
 const TIMEZONE = "America%2FLos_Angeles";
@@ -24,8 +25,7 @@ const LOCATIONS = {
 
 export const WeatherTabs = () => {
   const [location, setLocation] = useState(LOCATIONS.OTTAWA);
-  const [weatherData, setWeatherData] = useState([]);
-
+  const [weatherData, setWeatherData] = useState<IWeatherData>([] as any);
   useEffect(() => {
     fetch(
       `${WEATHER_API}?latitude=${location.latitude}&longitude=${location.longitude}&timezone=${TIMEZONE}&daily=weathercode,temperature_2m_min,temperature_2m_max&current_weather=true`
@@ -33,8 +33,8 @@ export const WeatherTabs = () => {
       .catch((err) => {
         console.log("Error :", err);
       })
-      .then((res) => res.json())
-      .then((data) => {
+      .then((res: any) => res.json())
+      .then((data: IWeatherData) => {
         setWeatherData(data);
       });
   }, [location]);
