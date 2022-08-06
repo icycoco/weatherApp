@@ -22,6 +22,7 @@ import {
   WiSprinkle,
   WiStormShowers,
   WiThunderstorm,
+  // @ts-ignore
 } from "weather-icons-react";
 
 export const getWeatherIcons = (weathercode: number) => {
